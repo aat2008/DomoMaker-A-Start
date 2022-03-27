@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: ''}));
 app.set('view engine', 'handlebars');
-app.set('view', `${__dirname}/../views`);
+app.set('views', `${__dirname}/../views`);
 app.use(cookieParser());
 
 router(app);
