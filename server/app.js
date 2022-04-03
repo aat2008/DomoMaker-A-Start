@@ -13,7 +13,7 @@ const redis = require('redis');
 const csrf = require('csurf');
 
 const router = require('./router.js');
-const { triggerAsyncId } = require('async_hooks');
+//const { triggerAsyncId } = require('async_hooks');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
